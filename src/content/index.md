@@ -23,6 +23,6 @@ You donation will help us achieve our mission. All donations are through Zeffy, 
 
 Zeffy link here
 
-Note: Zeffy will request an optional tip with yoru donation which is separate from your donation to MBF. It is your choice to tip or not. 
+Note: Zeffy will request an optional tip with your donation which is separate from your donation to MBF. It is your choice to tip or not. 
 
 ## 
