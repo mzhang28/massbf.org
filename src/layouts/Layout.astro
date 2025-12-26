@@ -12,40 +12,51 @@ import "./global.css";
     <title>Massachusetts Badminton Foundation</title>
   </head>
   <body class="flex flex-col min-h-full">
-    <header class="w-full flex flex-col items-stretch">
-      <div class="container mx-auto">
-        <div
-          class="flex flex-col md:flex-row p-4 md:pl-0 md:pr-0 pt-12 pb-8 items-center"
-        >
-          <h1 class="text-3xl font-bold">Massachusetts Badminton Foundation</h1>
-          <div class="grow min-h-4"></div>
-          <a
-            href="https://www.zeffy.com/en-US/donation-form/donate-to-us-2"
-            class="cursor-pointer bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-2 px-4 rounded text-center"
-            zeffy-form-link="https://www.zeffy.com/embed/donation-form/donate-to-us-2?modal=true"
-            >Donate to us!
-            <br /><small>via Zeffy</small></a
-          >
-        </div>
+    <header class="sticky-header">
+  <div class="container mx-auto md:px-0 px-4 py-2">
+    <div class="w-full flex items-center">
+      <h1 class="text-2xl font-bold whitespace-nowrap">
+        <a href="/" class="md:hidden">
+          MA Badminton Foundation
+        </a>
+        <a href="/" class="max-md:hidden">
+        Massachusetts Badminton Foundation
+        </a>
+      </h1>
+      <div class="grow" />
+      <nav class="flex space-between items-center gap-8">
+        <!-- <a href="/" class="hover:underline">Home</a> -->
+        <a href="/events" class="hover:underline">Events</a>
+        <!-- <a href="/another" class="hover:underline">Donations</a> -->
+      <a href="/donate"
+        class="cursor-pointer bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-2 px-6 rounded whitespace-nowrap"
+      >
+        Donate to us!
+      </a>
+      </nav>
 
-        <div>
-          Links:
-           <a href="/another">This website is under construction</a>
-        </div>
-      </div>
-    </header>
-    <main class="flex-1 p-4 md:pl-0 md:pr-0">
+    </div>
+  </div>
+</header>
+
+    <main class="flex-1 py-12 md:px-0">
       <div class="container mx-auto">
         <slot />
       </div>
     </main>
+
     <footer class="w-full bg-gray-200 p-4 md:pl-0 md:pr-0 pb-12">
-      <div class="container mx-auto">
+      <div class="container mx-auto flex">
+        <div class="flex flex-col gap-4">
+
+        <p class="text-gray-700 text-sm">Address: 80 Broadmeadow Street, Malborough, MA 01752
+        <br />Email: coming soon!</p>
         <p class="text-gray-700 text-sm">
           Massachusetts Badminton Foundation is a 501(c)(3) tax-exempt
           organization under the Internal Revenue Code, and contributions are
           deductible to the fullest extent of the law.
         </p>
+        </div>
       </div>
     </footer>
   </body>
