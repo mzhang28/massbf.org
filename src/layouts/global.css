@@ -22,3 +22,8 @@ body {
   padding: 10px 0;
   z-index: 1000;
 }
+
+.box {
+    background-color: rgb(255, 0, 195);
+    width: 100%;
+}

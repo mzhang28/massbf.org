@@ -1,5 +1,7 @@
 ---
 import "./global.css";
+
+import Navbar from "../components/Navbar.astro"
 ---
 
 <!doctype html>
@@ -14,38 +16,15 @@ import "./global.css";
   <body class="flex flex-col min-h-full">
     <header class="sticky-header">
   <div class="container mx-auto md:px-0 px-4 py-2">
-    <div class="w-full flex items-center">
-      <h1 class="text-2xl font-bold whitespace-nowrap">
-        <a href="/" class="md:hidden">
-          MA Badminton Foundation
-        </a>
-        <a href="/" class="max-md:hidden">
-        Massachusetts Badminton Foundation
-        </a>
-      </h1>
-      <div class="grow" />
-      <nav class="flex space-between items-center gap-8">
-        <!-- <a href="/" class="hover:underline">Home</a> -->
-        <a href="/events" class="hover:underline">Events</a>
-        <!-- <a href="/another" class="hover:underline">Donations</a> -->
-      <a href="/donate"
-        class="cursor-pointer bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-2 px-6 rounded whitespace-nowrap"
-      >
-        Donate to us!
-      </a>
-      </nav>
-
-    </div>
+      <Navbar />
   </div>
 </header>
 
-    <main class="flex-1 py-12 md:px-0">
-      <div class="container mx-auto">
+    <main class="flex-1 md:px-0">
         <slot />
-      </div>
     </main>
 
-    <footer class="w-full bg-gray-200 p-4 md:pl-0 md:pr-0 pb-12">
+    <footer class="w-full bg-gray-200 p-4 md:pl-0 max-sm:   md:pr-0 pb-12">
       <div class="container mx-auto flex">
         <div class="flex flex-col gap-4">
 

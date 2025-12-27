@@ -1,0 +1,35 @@
+---
+import HamburgerIcon from "../assets/hamburger.svg"
+---
+
+
+<div class="w-full flex flex-wrap items-center">
+  <h1 class="text-2xl font-bold whitespace-nowrap">
+    <a href="/" class="md:hidden"> MA Badminton Foundation </a>
+    <a href="/" class="max-md:hidden"> Massachusetts Badminton Foundation </a>
+  </h1>
+  <div class="grow"></div>
+
+  <label for="toggle-navbar">
+    <a class="cursor-pointer md:hidden">
+        <HamburgerIcon />
+    </a>
+  </label>
+
+<input type="checkbox" id="toggle-navbar" class="peer/toggle-navbar hidden" />
+
+<nav
+  class="space-between items-center gap-8 peer-checked/toggle-navbar:flex flex max-md:hidden max-md:flex-col max-md:gap-4 max-md:py-4 max-md:basis-full"
+>
+  <!-- <a href="/" class="hover:underline">Home</a> -->
+  <a href="/events" class="hover:underline">Events</a>
+  <!-- <a href="/another" class="hover:underline">Donations</a> -->
+  <a
+    href="/donate"
+    class="cursor-pointer bg-indigo-500 hover:bg-indigo-400 text-white font-bold py-2 px-6 rounded whitespace-nowrap"
+  >
+    Donate to us!
+  </a>
+</nav>
+
+</div>
