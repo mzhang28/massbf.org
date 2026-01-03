@@ -1,4 +1,6 @@
-## Donate to us
+<br>
+
+# Donate to us
 
 Massachusetts Badminton Foundation (MBF) is registered in Massachusetts with EIN: 39-4717851. MBF is a 501(c)(3) tax-exempt organization under the Internal Revenue Code, and contributions are deductible to the fullest extent of the law. 
 
