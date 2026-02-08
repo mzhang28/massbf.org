@@ -10,7 +10,7 @@ All personnel of the organization are volunteers. Raised funds will be 100% for 
 ## Officers
 <ul>
     <li>Lanju (Larry) Zhang - Director</li>
-    <li>Donga Satish - Treasurer</li>
+    <li>Satish Donga- Treasurer</li>
     <li>Nick Waller - Clerk</li>
 </ul>
 
